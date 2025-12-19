@@ -7,17 +7,17 @@ import { Footer } from './components/Footer';
 import { SponsorshipPackages } from './components/SponsorshipPackages';
 
 export default function App() {
-	return (
-		<div className="min-h-screen">
-			<Header />
-			<main>
-				<Hero />
-				<About />
-				<SponsorshipPackages />
-				<Team />
-				<Contact />
-			</main>
-			<Footer />
-		</div>
-	);
+    return (
+        <div className='min-h-screen'>
+            <Header />
+            <main>
+                <Hero />
+                <About />
+                <SponsorshipPackages />
+                <Team />
+                {/* <Contact /> */}
+            </main>
+            <Footer />
+        </div>
+    );
 }

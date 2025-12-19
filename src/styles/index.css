@@ -3,6 +3,8 @@
 @import './theme.css';
 
 .heroBackground {
-	background-image: url('../assets/heroBackground.png');
+    /* background-image: url('../assets/heroBackground.png');
 	background-position: center;
+	background-size: contain; */
+    background-color: blue;
 }
