@@ -39,18 +39,20 @@ export function Team() {
                                 </p>
                             </div>
                             <div className='flex justify-center gap-3'>
-                                <button
+                                <a
+                                    href={member.linkedInUrl}
                                     className='p-2 hover:bg-gray-100 rounded-full transition-colors cursor-pointer'
                                     aria-label='LinkedIn'
                                 >
                                     <Linkedin className='h-5 w-5 text-gray-600' />
-                                </button>
-                                <button
+                                </a>
+                                <a
+                                    href={`mailto:${member.societyEmail}`}
                                     className='p-2 hover:bg-gray-100 rounded-full transition-colors cursor-pointer'
                                     aria-label='Email'
                                 >
                                     <Mail className='h-5 w-5 text-gray-600' />
-                                </button>
+                                </a>
                             </div>
                         </Card>
                     ))}

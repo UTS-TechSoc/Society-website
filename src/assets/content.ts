@@ -1,4 +1,7 @@
 import { Presentation, Lightbulb, Rocket, Users } from 'lucide-react';
+import erinPfp from '../assets/erinPfp.jpeg';
+import mridulaPfp from '../assets/mridulaPfp.jpeg';
+import mattPfp from '../assets/mattPfp.jpeg';
 
 export const aboutFeatures = [
     {
@@ -63,19 +66,28 @@ export const teamData = [
     {
         name: 'Erin Blanchard',
         role: 'President',
-        pfpUrl: 'https://media.licdn.com/dms/image/v2/D5603AQFLhGsNP_DFBA/profile-displayphoto-shrink_400_400/B56ZV6S50MHsAg-/0/1741513531074?e=1767830400&v=beta&t=RHgg5Lo17NB-C7hoz0RVZTkpFifj1xK4rqbN4t-iRao',
+        pfpUrl: erinPfp,
         bio: 'Leads the vision, strategy and initiatives to empower student growth and prepare members for industry work.',
+        linkedInUrl: 'https://www.linkedin.com/in/erin-blanchard-290aab2a5/',
+        societyEmail: 'president@techsoc.activateuts.com.au',
     },
     {
         name: 'Mridula Halder',
         role: 'Vice President',
-        pfpUrl: 'https://media.licdn.com/dms/image/v2/D5603AQFuO7vGeXdJKA/profile-displayphoto-scale_400_400/B56Ziy1yj0G0Ak-/0/1755347102666?e=1767830400&v=beta&t=p91-3k3mk9Ds9N648g_jeR3MDc1KhOD8bodiojYNE_E',
+        pfpUrl: mridulaPfp,
         bio: 'Supports operations to ensure impactful events and their smooth execution.',
+        linkedInUrl: 'https://www.linkedin.com/in/mridula-halder/',
+        societyEmail: 'vicepresident@techsoc.activateuts.com.au',
     },
     {
         name: 'Matthew Adler',
         role: 'Sponsors Director',
-        pfpUrl: 'https://media.licdn.com/dms/image/v2/D5603AQGI-Lj3-mh5QQ/profile-displayphoto-shrink_400_400/B56ZWJcoXUGsAk-/0/1741767739277?e=1767830400&v=beta&t=-ItrNZscBndPlDrXFcCbeUZfG1gztilAux__fblW3JQ',
+        pfpUrl: mattPfp,
         bio: 'Builds and manages industry partnerships to create valuable connections and opportunities for members.',
+        linkedInUrl: 'https://www.linkedin.com/in/matthew-adler-39b9092b9/',
+        societyEmail: 'pr@techsoc.activateuts.com.au',
     },
 ];
+
+export const techsocLinkedInUrl =
+    'https://www.linkedin.com/company/uts-tech-society/posts/?feedView=all';
