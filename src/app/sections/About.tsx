@@ -1,5 +1,5 @@
 import { aboutFeatures } from '../../assets/content';
-import { Card } from '../components/ui/card';
+import { Card } from '../components/card';
 
 export function About() {
     return (

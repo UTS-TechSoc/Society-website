@@ -1,5 +1,5 @@
 import { ArrowRight, Users, Calendar } from 'lucide-react';
-import { Button } from '../components/ui/button';
+import { Button } from '../components/button';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import utsLogo from '../../assets/utsLogo.png';
@@ -68,15 +68,6 @@ export function Hero() {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className='flex items-center gap-4 bg-white px-4 py-2 rounded-xl'>
-                                <Calendar className='h-5 w-5 text-blue-600' />
-                                <div>
-                                    <div className='text-2xl'>50+</div>
-                                    <div className='text-sm text-gray-600'>
-                                        Events/Year
-                                    </div>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
                 </div>

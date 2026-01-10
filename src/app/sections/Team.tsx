@@ -1,6 +1,5 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
-import { Card } from '../components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
+import { Linkedin, Mail } from 'lucide-react';
+import { Card } from '../components/card';
 import { teamData } from '../../assets/content';
 
 export function Team() {
