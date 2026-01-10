@@ -1,5 +1,5 @@
 import { Check } from 'lucide-react';
-import { Card } from './ui/card';
+import { Card } from '../components/card';
 import { packagesData } from '../../assets/content';
 
 export function SponsorshipPackages() {
@@ -33,10 +33,12 @@ export function SponsorshipPackages() {
                                 className={`bg-gradient-to-r ${pkg.color} p-8 text-white`}
                             >
                                 <h3 className='text-3xl mb-2'>{pkg.name}</h3>
-                                <div className='text-4xl'>{pkg.price}</div>
-                                <div className='text-sm opacity-90'>
-                                    per year
-                                </div>
+                                <div className='text-4xl'>{pkg?.price}</div>
+                                {pkg?.price ? (
+                                    <div className='text-sm opacity-90'>
+                                        per year
+                                    </div>
+                                ) : null}
                             </div>
                             <div className='p-8'>
                                 <ul className='space-y-4 mb-8'>

@@ -1,5 +1,5 @@
 import { ArrowRight, Users, Calendar } from 'lucide-react';
-import { Button } from './ui/button';
+import { Button } from '../components/button';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import utsLogo from '../../assets/utsLogo.png';
@@ -13,7 +13,7 @@ export function Hero() {
     }, []);
 
     return (
-        <section className='relative overflow-hidden py-20 md:py-32'>
+        <section id='hero' className='relative overflow-hidden py-20 md:py-32'>
             <Particles id='tsparticles' options={particleOptionsObject} />
             <div className='container mx-auto px-4'>
                 <div className='grid md:grid-cols-2 gap-12 items-center'>
@@ -65,15 +65,6 @@ export function Hero() {
                                     <div className='text-2xl'>900+</div>
                                     <div className='text-sm text-gray-600'>
                                         Members
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='flex items-center gap-4 bg-white px-4 py-2 rounded-xl'>
-                                <Calendar className='h-5 w-5 text-blue-600' />
-                                <div>
-                                    <div className='text-2xl'>50+</div>
-                                    <div className='text-sm text-gray-600'>
-                                        Events/Year
                                     </div>
                                 </div>
                             </div>

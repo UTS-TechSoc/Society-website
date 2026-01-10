@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { Button } from './ui/button';
+import { Button } from '../components/button';
 import logo from '../../assets/techsocLogo.jpg';
 import { scrollToSection } from '../../utils';
 
@@ -11,10 +11,13 @@ export function Header() {
         <header className='sticky top-0 z-50 w-full border-b bg-white/95'>
             <div className='container mx-auto px-4'>
                 <div className='flex h-16 items-center justify-between'>
-                    <div className='flex items-center gap-2'>
+                    <button
+                        className='flex items-center gap-2 cursor-pointer'
+                        onClick={() => scrollToSection('hero')}
+                    >
                         <img src={logo} alt='' className='h-10 w-10' />
                         <span className='text-xl'>TechSoc</span>
-                    </div>
+                    </button>
 
                     {/* Desktop Navigation */}
                     <nav className='hidden md:flex items-center gap-6'>
@@ -23,6 +26,12 @@ export function Header() {
                             className='hover:text-blue-600 transition-colors cursor-pointer'
                         >
                             About
+                        </button>
+                        <button
+                            onClick={() => scrollToSection('sponsors')}
+                            className='hover:text-blue-600 transition-colors cursor-pointer'
+                        >
+                            Sponsors
                         </button>
                         <button
                             onClick={() => scrollToSection('packages')}
@@ -36,12 +45,6 @@ export function Header() {
                         >
                             Team
                         </button>
-                        {/* <button
-                            onClick={() => scrollToSection('contact')}
-                            className='hover:text-blue-600 transition-colors cursor-pointer'
-                        >
-                            Contact
-                        </button> */}
                         <Button onClick={() => scrollToSection('contact')}>
                             Contact Us
                         </Button>
@@ -71,10 +74,16 @@ export function Header() {
                             About
                         </button>
                         <button
-                            onClick={() => scrollToSection('events')}
+                            onClick={() => scrollToSection('sponsors')}
                             className='text-left py-2 hover:text-blue-600 transition-colors cursor-pointer'
                         >
-                            Events
+                            Sponsors
+                        </button>
+                        <button
+                            onClick={() => scrollToSection('packages')}
+                            className='text-left py-2 hover:text-blue-600 transition-colors cursor-pointer'
+                        >
+                            Packages
                         </button>
                         <button
                             onClick={() => scrollToSection('team')}
@@ -82,17 +91,11 @@ export function Header() {
                         >
                             Team
                         </button>
-                        <button
-                            onClick={() => scrollToSection('contact')}
-                            className='text-left py-2 hover:text-blue-600 transition-colors cursor-pointer'
-                        >
-                            Contact
-                        </button>
                         <Button
                             onClick={() => scrollToSection('contact')}
                             className='w-full'
                         >
-                            Join Us
+                            Contact Us
                         </Button>
                     </nav>
                 )}
