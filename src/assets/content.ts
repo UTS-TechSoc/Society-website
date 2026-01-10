@@ -30,7 +30,6 @@ export const aboutFeatures = [
 export const packagesData = [
     {
         name: 'Bronze',
-        price: '$750',
         color: 'from-amber-600 to-amber-800',
         features: [
             'Social media marketing',
@@ -41,7 +40,6 @@ export const packagesData = [
     },
     {
         name: 'Silver',
-        price: '$1,200',
         color: 'from-gray-400 to-gray-600',
         features: [
             'All Bronze benefits',
@@ -51,7 +49,6 @@ export const packagesData = [
     },
     {
         name: 'Gold',
-        price: '$1,500',
         color: 'from-yellow-400 to-yellow-600',
         popular: true,
         features: [
