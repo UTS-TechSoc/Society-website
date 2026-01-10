@@ -13,7 +13,7 @@ export function Hero() {
     }, []);
 
     return (
-        <section className='relative overflow-hidden py-20 md:py-32'>
+        <section id='hero' className='relative overflow-hidden py-20 md:py-32'>
             <Particles id='tsparticles' options={particleOptionsObject} />
             <div className='container mx-auto px-4'>
                 <div className='grid md:grid-cols-2 gap-12 items-center'>
@@ -68,7 +68,7 @@ export function Hero() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='flex items-center gap-4 bg-white px-4 py-2 rounded-xl'>
+                            {/* <div className='flex items-center gap-4 bg-white px-4 py-2 rounded-xl'>
                                 <Calendar className='h-5 w-5 text-blue-600' />
                                 <div>
                                     <div className='text-2xl'>50+</div>
@@ -76,7 +76,7 @@ export function Hero() {
                                         Events/Year
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

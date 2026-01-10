@@ -11,10 +11,13 @@ export function Header() {
         <header className='sticky top-0 z-50 w-full border-b bg-white/95'>
             <div className='container mx-auto px-4'>
                 <div className='flex h-16 items-center justify-between'>
-                    <div className='flex items-center gap-2'>
+                    <button
+                        className='flex items-center gap-2 cursor-pointer'
+                        onClick={() => scrollToSection('hero')}
+                    >
                         <img src={logo} alt='' className='h-10 w-10' />
                         <span className='text-xl'>TechSoc</span>
-                    </div>
+                    </button>
 
                     {/* Desktop Navigation */}
                     <nav className='hidden md:flex items-center gap-6'>
