@@ -16,7 +16,7 @@ export function Header() {
                         onClick={() => scrollToSection('hero')}
                     >
                         <img src={logo} alt='' className='h-10 w-10' />
-                        <span className='text-xl'>TechSoc</span>
+                        <span className='text-xl'>UTS TechSoc</span>
                     </button>
 
                     {/* Desktop Navigation */}
