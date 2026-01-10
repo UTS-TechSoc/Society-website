@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { Button } from '../components/ui/button';
+import { Button } from '../components/button';
 import logo from '../../assets/techsocLogo.jpg';
 import { scrollToSection } from '../../utils';
 
@@ -28,6 +28,12 @@ export function Header() {
                             About
                         </button>
                         <button
+                            onClick={() => scrollToSection('sponsors')}
+                            className='hover:text-blue-600 transition-colors cursor-pointer'
+                        >
+                            Sponsors
+                        </button>
+                        <button
                             onClick={() => scrollToSection('packages')}
                             className='hover:text-blue-600 transition-colors cursor-pointer'
                         >
@@ -39,12 +45,6 @@ export function Header() {
                         >
                             Team
                         </button>
-                        {/* <button
-                            onClick={() => scrollToSection('contact')}
-                            className='hover:text-blue-600 transition-colors cursor-pointer'
-                        >
-                            Contact
-                        </button> */}
                         <Button onClick={() => scrollToSection('contact')}>
                             Contact Us
                         </Button>
@@ -74,10 +74,16 @@ export function Header() {
                             About
                         </button>
                         <button
-                            onClick={() => scrollToSection('events')}
+                            onClick={() => scrollToSection('sponsors')}
                             className='text-left py-2 hover:text-blue-600 transition-colors cursor-pointer'
                         >
-                            Events
+                            Sponsors
+                        </button>
+                        <button
+                            onClick={() => scrollToSection('packages')}
+                            className='text-left py-2 hover:text-blue-600 transition-colors cursor-pointer'
+                        >
+                            Packages
                         </button>
                         <button
                             onClick={() => scrollToSection('team')}
@@ -85,17 +91,11 @@ export function Header() {
                         >
                             Team
                         </button>
-                        <button
-                            onClick={() => scrollToSection('contact')}
-                            className='text-left py-2 hover:text-blue-600 transition-colors cursor-pointer'
-                        >
-                            Contact
-                        </button>
                         <Button
                             onClick={() => scrollToSection('contact')}
                             className='w-full'
                         >
-                            Join Us
+                            Contact Us
                         </Button>
                     </nav>
                 )}
