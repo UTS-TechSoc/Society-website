@@ -1,4 +1,7 @@
 import { Presentation, Lightbulb, Rocket, Users } from 'lucide-react';
+import fenwickLogo from '../assets/companyLogos/fenwickLogo.png';
+import macquarieLogo from '../assets/companyLogos/macquarieLogo.png';
+import pwcLogo from '../assets/companyLogos/pwcLogo.png';
 import erinPfp from '../assets/erinPfp.jpeg';
 import mridulaPfp from '../assets/mridulaPfp.jpeg';
 import mattPfp from '../assets/mattPfp.jpeg';
@@ -27,6 +30,25 @@ export const aboutFeatures = [
         title: 'Career Development',
         description:
             'Access career guidance, mentorship programs, and exclusive opportunities from our tech partners.',
+    },
+];
+
+export const sponsorCarouselData = [
+    {
+        companyName: 'Macquarie',
+        image: macquarieLogo,
+        linkedinUrl:
+            'https://www.linkedin.com/company/macquariegroup/posts/?feedView=all',
+    },
+    {
+        companyName: 'PWC',
+        image: pwcLogo,
+        linkedinUrl: 'https://www.linkedin.com/company/pwc/posts/?feedView=all',
+    },
+    {
+        companyName: 'Fenwick',
+        image: fenwickLogo,
+        linkedinUrl: 'https://www.linkedin.com/company/fenwick-it/',
     },
 ];
 

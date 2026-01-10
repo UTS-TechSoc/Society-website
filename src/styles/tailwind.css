@@ -3,6 +3,10 @@
 
 @import 'tw-animate-css';
 
+:root {
+    --techsoc-blue: #3a6ed4;
+}
+
 @theme {
-    --color-techsoc-blue: #3a6ed4;
+    --color-techsoc-blue: var(--techsoc-blue);
 }

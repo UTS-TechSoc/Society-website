@@ -1,10 +1,11 @@
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Team } from './components/Team';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
-import { SponsorshipPackages } from './components/SponsorshipPackages';
+import { Header } from './sections/Header';
+import { Hero } from './sections/Hero';
+import { About } from './sections/About';
+import { SponsorsCarousel } from './sections/SponsorsCarousel';
+import { Team } from './sections/Team';
+import { Contact } from './sections/Contact';
+import { Footer } from './sections/Footer';
+import { SponsorshipPackages } from './sections/SponsorshipPackages';
 
 export default function App() {
     return (
@@ -13,6 +14,7 @@ export default function App() {
             <main>
                 <Hero />
                 <About />
+                <SponsorsCarousel />
                 <SponsorshipPackages />
                 <Team />
                 <Contact />
