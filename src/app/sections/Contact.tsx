@@ -1,5 +1,5 @@
 import { Linkedin, Mail } from 'lucide-react';
-import { Button } from './ui/button';
+import { Button } from '../components/ui/button';
 import { teamData, techsocLinkedInUrl } from '../../assets/content';
 
 export function Contact() {

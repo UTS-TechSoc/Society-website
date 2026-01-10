@@ -1,5 +1,5 @@
 import { ArrowRight, Users, Calendar } from 'lucide-react';
-import { Button } from './ui/button';
+import { Button } from '../components/ui/button';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import utsLogo from '../../assets/utsLogo.png';

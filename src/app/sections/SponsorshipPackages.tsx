@@ -1,5 +1,5 @@
 import { Check } from 'lucide-react';
-import { Card } from './ui/card';
+import { Card } from '../components/ui/card';
 import { packagesData } from '../../assets/content';
 
 export function SponsorshipPackages() {

@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { Button } from './ui/button';
+import { Button } from '../components/ui/button';
 import logo from '../../assets/techsocLogo.jpg';
 import { scrollToSection } from '../../utils';
 
