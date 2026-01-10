@@ -1,32 +1,52 @@
-import { Mail, MapPin, Instagram, Twitter, Github } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 import { Button } from './ui/button';
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea';
-import { Card } from './ui/card';
+import { teamData, techsocLinkedInUrl } from '../../assets/content';
 
 export function Contact() {
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Handle form submission
-        alert("Thanks for your interest! We'll get back to you soon.");
-    };
+    const sponsorDirectorEmail = teamData.find(
+        member => member.role === 'Sponsors Director'
+    )?.societyEmail;
 
     return (
         <section
             id='contact'
-            className='py-20 bg-gradient-to-br from-blue-50 to-purple-50'
+            className='py-15 bg-gradient-to-br from-blue-50 to-purple-50'
         >
             <div className='container mx-auto px-4'>
-                <div className='text-center max-w-3xl mx-auto mb-16'>
+                <div className='flex flex-col items-center max-w-3xl mx-auto mb-5'>
                     <h2 className='text-4xl md:text-5xl mb-4'>Get In Touch</h2>
-                    <p className='text-xl text-gray-600'>
+                    <p className='text-center text-xl text-gray-600 max-w-xl'>
                         Interested in partnering with TechSoc or have questions?
                         We'd love to hear from you!
                     </p>
                 </div>
 
-                <div className='grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto'>
-                    <Card className='p-8'>
+                <div className='flex justify-center'>
+                    <div className='flex justify-between gap-20'>
+                        <div className='flex flex-col gap-2'>
+                            {/* <h3 className='text-center'>Email</h3> */}
+                            <a
+                                href={`mailto:${sponsorDirectorEmail}?subject=UTS%20TechSoc%20Partnership%20Enquiry:%20<<YOUR%20COMPANY%20NAME%20HERE>>`}
+                            >
+                                <Button className='' variant={'default'}>
+                                    Send us an email!
+                                    <Mail />
+                                </Button>
+                            </a>
+                        </div>
+                        {/* <div className='flex flex-col gap-2'>
+                            <h3 className='text-center'>LinkedIn</h3>
+                            <a href={techsocLinkedInUrl}>
+                                <Button
+                                    className='w-16 h-11'
+                                    variant={'outline'}
+                                >
+                                    <Linkedin />
+                                </Button>
+                            </a>
+                        </div> */}
+                    </div>
+                    {/* <Card className='p-8'>
                         <h3 className='text-2xl mb-6'>Send us a message</h3>
                         <form onSubmit={handleSubmit} className='space-y-4'>
                             <div>
@@ -74,9 +94,9 @@ export function Contact() {
                                 Send Message
                             </Button>
                         </form>
-                    </Card>
+                    </Card> */}
 
-                    <div className='space-y-8'>
+                    {/* <div className='space-y-8'>
                         <div>
                             <h3 className='text-2xl mb-6'>
                                 Contact Information
@@ -144,7 +164,7 @@ export function Contact() {
                                 Engineering Building, Room 301
                             </p>
                         </Card>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

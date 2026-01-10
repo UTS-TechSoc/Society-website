@@ -15,7 +15,7 @@ export default function App() {
                 <About />
                 <SponsorshipPackages />
                 <Team />
-                {/* <Contact /> */}
+                <Contact />
             </main>
             <Footer />
         </div>
