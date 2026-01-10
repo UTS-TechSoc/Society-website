@@ -1,4 +1,6 @@
+import { techsocLinkedInUrl } from '../../assets/content';
 import logo from '../../assets/techsocLogo.jpg';
+import { Instagram, Facebook, Linkedin } from 'lucide-react';
 
 export function Footer() {
     return (
@@ -9,7 +11,32 @@ export function Footer() {
                         <img src={logo} alt='' className='h-10 w-10' />
                         <span className='text-xl'>TechSoc</span>
                     </div>
-                    <div className='text-center text-sm'>
+                    <div className='flex flex-row items-center gap-10 text-center text-sm'>
+                        <div>
+                            <div className='flex gap-4'>
+                                <a
+                                    href='https://www.instagram.com/utstechsoc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
+                                    className='p-3 bg-white rounded-full hover:bg-gray-100 transition-colors shadow-sm'
+                                    aria-label='Instagram'
+                                >
+                                    <Instagram className='h-6 w-6 text-gray-700' />
+                                </a>
+                                <a
+                                    href='https://www.facebook.com/UTSTechSoc'
+                                    className='p-3 bg-white rounded-full hover:bg-gray-100 transition-colors shadow-sm'
+                                    aria-label='Facebook'
+                                >
+                                    <Facebook className='h-6 w-6 text-gray-700' />
+                                </a>
+                                <a
+                                    href={techsocLinkedInUrl}
+                                    className='p-3 bg-white rounded-full hover:bg-gray-100 transition-colors shadow-sm'
+                                    aria-label='Linkedin'
+                                >
+                                    <Linkedin className='h-6 w-6 text-gray-700' />
+                                </a>
+                            </div>
+                        </div>
                         © 2025 TechSoc. All rights reserved.
                     </div>
                     {/* <div className='flex gap-6 text-sm'>
