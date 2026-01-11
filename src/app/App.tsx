@@ -9,7 +9,7 @@ import { SponsorshipPackages } from './sections/SponsorshipPackages';
 
 export default function App() {
     return (
-        <div className='min-h-screen'>
+        <div className='main-div min-h-screen'>
             <Header />
             <main>
                 <Hero />
