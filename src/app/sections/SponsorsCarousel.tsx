@@ -1,4 +1,5 @@
 import { sponsorCarouselData } from '../../assets/content';
+import EmblaCarousel from '../components/EmblaCarousel/EmblaCarousel';
 
 export function SponsorsCarousel() {
     return (
@@ -8,15 +9,9 @@ export function SponsorsCarousel() {
                 <p className='text-xl text-gray-600 text-center mb-8'>
                     Current society partners include:
                 </p>
-                <ul className='carousel mx-20'>
-                    {sponsorCarouselData.map(sponsorData => (
-                        <li className='carousel-item'>
-                            <a href={sponsorData.linkedinUrl}>
-                                <img src={sponsorData.image} alt='' />
-                            </a>
-                        </li>
-                    ))}
-                </ul>
+                <div className='mx-10'>
+                    <EmblaCarousel slides={sponsorCarouselData} />
+                </div>
             </div>
         </section>
     );

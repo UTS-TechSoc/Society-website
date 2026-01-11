@@ -299,7 +299,7 @@ export const particleOptionsObject: ISourceOptions = {
                 mode: 'delete',
                 value: 0,
             },
-            value: 100,
+            value: window.innerWidth > 767 ? 80 : 30,
         },
         opacity: {
             value: {

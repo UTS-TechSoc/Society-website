@@ -6,6 +6,12 @@ import erinPfp from '../assets/erinPfp.jpeg';
 import mridulaPfp from '../assets/mridulaPfp.jpeg';
 import mattPfp from '../assets/mattPfp.jpeg';
 
+export interface SponsorCarouselData {
+    companyName: string;
+    image: string;
+    linkedinUrl: string;
+}
+
 export const aboutFeatures = [
     {
         icon: Presentation,
@@ -33,7 +39,7 @@ export const aboutFeatures = [
     },
 ];
 
-export const sponsorCarouselData = [
+export const sponsorCarouselData: SponsorCarouselData[] = [
     {
         companyName: 'Macquarie',
         image: macquarieLogo,
