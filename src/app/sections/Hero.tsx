@@ -1,4 +1,4 @@
-import { ArrowRight, Users, Calendar } from 'lucide-react';
+import { ArrowRight, Users } from 'lucide-react';
 import { Button } from '../components/button';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
