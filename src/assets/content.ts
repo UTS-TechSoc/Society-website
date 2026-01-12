@@ -56,6 +56,11 @@ export const sponsorCarouselData: SponsorCarouselData[] = [
         image: fenwickLogo,
         linkedinUrl: 'https://www.linkedin.com/company/fenwick-it/',
     },
+    {
+        companyName: 'PWC',
+        image: pwcLogo,
+        linkedinUrl: 'https://www.linkedin.com/company/pwc/posts/?feedView=all',
+    },
 ];
 
 export const packagesData = [
