@@ -1,4 +1,5 @@
 import { ISourceOptions } from '@tsparticles/engine';
+import { isMobileUi } from '../utils';
 
 export const particleOptionsObject: ISourceOptions = {
     autoPlay: true,
@@ -299,7 +300,7 @@ export const particleOptionsObject: ISourceOptions = {
                 mode: 'delete',
                 value: 0,
             },
-            value: window.innerWidth > 767 ? 80 : 30,
+            value: isMobileUi() ? 30 : 80,
         },
         opacity: {
             value: {

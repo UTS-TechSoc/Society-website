@@ -1,4 +1,5 @@
 import { sponsorCarouselData } from '../../assets/content';
+import { isMobileUi } from '../../utils';
 import {
     Carousel,
     CarouselContent,
@@ -32,7 +33,9 @@ export function SponsorsCarousel() {
                         {sponsorCarouselData.map(sponsorData => (
                             <CarouselItem
                                 key={sponsorData.companyName}
-                                className='basis-1/3 flex justify-center items-center'
+                                className={`basis-${
+                                    isMobileUi() ? '1/2' : '1/3'
+                                } flex justify-center items-center`}
                             >
                                 <a href={sponsorData.linkedinUrl}>
                                     <img
