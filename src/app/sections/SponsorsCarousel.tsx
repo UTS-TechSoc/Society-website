@@ -33,9 +33,10 @@ export function SponsorsCarousel() {
                         {sponsorCarouselData.map(sponsorData => (
                             <CarouselItem
                                 key={sponsorData.companyName}
-                                className={`basis-${
-                                    isMobileUi() ? '1/2' : '1/3'
-                                } flex justify-center items-center`}
+                                className={
+                                    (isMobileUi() ? 'basis-1/2' : 'basis-1/3') +
+                                    ' flex justify-center items-center'
+                                }
                             >
                                 <a href={sponsorData.linkedinUrl}>
                                     <img
