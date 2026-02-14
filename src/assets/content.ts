@@ -2,6 +2,7 @@ import { Presentation, Lightbulb, Rocket, Users } from 'lucide-react';
 import fenwickLogo from '../assets/companyLogos/fenwickLogo.png';
 import macquarieLogo from '../assets/companyLogos/macquarieLogo.png';
 import pwcLogo from '../assets/companyLogos/pwcLogo.png';
+import westpacLogo from '../assets/companyLogos/westpacLogo.png';
 import erinPfp from '../assets/erinPfp.jpeg';
 import mridulaPfp from '../assets/mridulaPfp.jpeg';
 import mattPfp from '../assets/mattPfp.jpeg';
@@ -57,9 +58,9 @@ export const sponsorCarouselData: SponsorCarouselData[] = [
         linkedinUrl: 'https://www.linkedin.com/company/fenwick-it/',
     },
     {
-        companyName: 'PWC',
-        image: pwcLogo,
-        linkedinUrl: 'https://www.linkedin.com/company/pwc/posts/?feedView=all',
+        companyName: 'Westpac',
+        image: westpacLogo,
+        linkedinUrl: 'https://www.linkedin.com/company/westpac/',
     },
 ];
 
