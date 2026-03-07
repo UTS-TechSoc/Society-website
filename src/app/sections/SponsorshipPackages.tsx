@@ -21,11 +21,13 @@ export function SponsorshipPackages() {
                         <Card
                             key={index}
                             className={`relative overflow-hidden ${
-                                pkg.popular ? 'ring-2 ring-blue-600' : ''
+                                pkg.popular
+                                    ? 'ring-2 ring-techsoc-dark-blue-600'
+                                    : ''
                             }`}
                         >
                             {pkg.popular && (
-                                <div className='absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 text-sm'>
+                                <div className='absolute top-0 right-0 bg-techsoc-dark-blue text-white px-4 py-1 text-sm'>
                                     Most Popular
                                 </div>
                             )}

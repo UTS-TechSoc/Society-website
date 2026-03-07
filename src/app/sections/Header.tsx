@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '../components/button';
-import logo from '../../assets/techsocLogo.jpg';
+import logo from '../../assets/techsocLogo.png';
 import { scrollToSection } from '../../utils';
 
 export function Header() {
@@ -23,25 +23,25 @@ export function Header() {
                     <nav className='hidden md:flex items-center gap-6'>
                         <button
                             onClick={() => scrollToSection('about')}
-                            className='hover:text-blue-600 transition-colors cursor-pointer'
+                            className='hover:text-techsoc-dark-blue-600 transition-colors cursor-pointer'
                         >
                             About
                         </button>
                         <button
                             onClick={() => scrollToSection('sponsors')}
-                            className='hover:text-blue-600 transition-colors cursor-pointer'
+                            className='hover:text-techsoc-dark-blue-600 transition-colors cursor-pointer'
                         >
                             Sponsors
                         </button>
                         <button
                             onClick={() => scrollToSection('packages')}
-                            className='hover:text-blue-600 transition-colors cursor-pointer'
+                            className='hover:text-techsoc-dark-blue-600 transition-colors cursor-pointer'
                         >
                             Packages
                         </button>
                         <button
                             onClick={() => scrollToSection('team')}
-                            className='hover:text-blue-600 transition-colors cursor-pointer'
+                            className='hover:text-techsoc-dark-blue-600 transition-colors cursor-pointer'
                         >
                             Team
                         </button>
@@ -69,25 +69,25 @@ export function Header() {
                     <nav className='md:hidden py-4 flex flex-col gap-4'>
                         <button
                             onClick={() => scrollToSection('about')}
-                            className='text-left py-2 hover:text-blue-600 transition-colors cursor-pointer'
+                            className='text-left py-2 hover:text-techsoc-dark-blue-600 transition-colors cursor-pointer'
                         >
                             About
                         </button>
                         <button
                             onClick={() => scrollToSection('sponsors')}
-                            className='text-left py-2 hover:text-blue-600 transition-colors cursor-pointer'
+                            className='text-left py-2 hover:text-techsoc-dark-blue-600 transition-colors cursor-pointer'
                         >
                             Sponsors
                         </button>
                         <button
                             onClick={() => scrollToSection('packages')}
-                            className='text-left py-2 hover:text-blue-600 transition-colors cursor-pointer'
+                            className='text-left py-2 hover:text-techsoc-dark-blue-600 transition-colors cursor-pointer'
                         >
                             Packages
                         </button>
                         <button
                             onClick={() => scrollToSection('team')}
-                            className='text-left py-2 hover:text-blue-600 transition-colors cursor-pointer'
+                            className='text-left py-2 hover:text-techsoc-dark-blue-600 transition-colors cursor-pointer'
                         >
                             Team
                         </button>

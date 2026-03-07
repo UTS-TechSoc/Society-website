@@ -1,5 +1,5 @@
 import { techsocLinkedInUrl } from '../../assets/content';
-import logo from '../../assets/techsocLogo.jpg';
+import logo from '../../assets/techsocLogo.png';
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
 
 export function Footer() {

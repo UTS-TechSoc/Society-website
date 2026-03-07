@@ -60,7 +60,7 @@ export function Hero() {
                         </div>
                         <div className='flex flex-wrap gap-8 pt-4'>
                             <div className='flex items-center gap-4 bg-white px-4 py-2 rounded-xl'>
-                                <Users className='h-5 w-5 text-blue-600' />
+                                <Users className='h-5 w-5 text-techsoc-dark-blue-600' />
                                 <div>
                                     <div className='text-2xl'>900+</div>
                                     <div className='text-sm text-gray-600'>

@@ -5,7 +5,7 @@ export const particleOptionsObject: ISourceOptions = {
     autoPlay: true,
     background: {
         color: {
-            value: '#0d47a1',
+            value: '#34336c',
         },
         image: '',
         position: '',

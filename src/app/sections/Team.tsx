@@ -30,7 +30,7 @@ export function Team() {
                                     />
                                 </div>
                                 <h3 className='text-xl mb-1'>{member.name}</h3>
-                                <div className='text-blue-600 mb-3'>
+                                <div className='text-techsoc-dark-blue-600 mb-3'>
                                     {member.role}
                                 </div>
                                 <p className='text-gray-600 mb-4'>

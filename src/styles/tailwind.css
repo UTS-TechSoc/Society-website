@@ -5,8 +5,10 @@
 
 :root {
     --techsoc-blue: #3a6ed4;
+    --techsoc-dark-blue: #22214c;
 }
 
 @theme {
     --color-techsoc-blue: var(--techsoc-blue);
+    --color-techsoc-dark-blue: var(--techsoc-dark-blue);
 }
