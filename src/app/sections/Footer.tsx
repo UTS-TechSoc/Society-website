@@ -37,7 +37,7 @@ export function Footer() {
                                 </a>
                             </div>
                         </div>
-                        © 2025 TechSoc. All rights reserved.
+                        © 2026 TechSoc. All rights reserved.
                     </div>
                 </div>
             </div>
