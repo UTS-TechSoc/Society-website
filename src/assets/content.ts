@@ -3,6 +3,7 @@ import fenwickLogo from '../assets/companyLogos/fenwickLogo.png';
 import macquarieLogo from '../assets/companyLogos/macquarieLogo.png';
 import pwcLogo from '../assets/companyLogos/pwcLogo.png';
 import westpacLogo from '../assets/companyLogos/westpacLogo.png';
+import optiverLogo from '../assets/companyLogos/optiverLogo.png';
 import erinPfp from '../assets/erinPfp.jpeg';
 import mridulaPfp from '../assets/mridulaPfp.jpeg';
 import mattPfp from '../assets/mattPfp.jpeg';
@@ -61,6 +62,12 @@ export const sponsorCarouselData: SponsorCarouselData[] = [
         companyName: 'Westpac',
         image: westpacLogo,
         linkedinUrl: 'https://www.linkedin.com/company/westpac/',
+    },
+    {
+        companyName: 'Optiver',
+        image: optiverLogo,
+        linkedinUrl:
+            'https://www.linkedin.com/company/optiver/?originalSubdomain=au',
     },
 ];
 
