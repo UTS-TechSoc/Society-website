@@ -1,12 +1,13 @@
-import { Presentation, Lightbulb, Rocket, Users } from 'lucide-react';
+import { Lightbulb, Presentation, Rocket, Users } from 'lucide-react';
+import fdmLogo from '../assets/companyLogos/fdmLogo.png';
 import fenwickLogo from '../assets/companyLogos/fenwickLogo.png';
 import macquarieLogo from '../assets/companyLogos/macquarieLogo.png';
+import optiverLogo from '../assets/companyLogos/optiverLogo.png';
 import pwcLogo from '../assets/companyLogos/pwcLogo.png';
 import westpacLogo from '../assets/companyLogos/westpacLogo.png';
-import optiverLogo from '../assets/companyLogos/optiverLogo.png';
 import erinPfp from '../assets/erinPfp.jpeg';
-import mridulaPfp from '../assets/mridulaPfp.jpeg';
 import mattPfp from '../assets/mattPfp.jpeg';
+import mridulaPfp from '../assets/mridulaPfp.jpeg';
 
 export interface SponsorCarouselData {
     companyName: string;
@@ -68,6 +69,12 @@ export const sponsorCarouselData: SponsorCarouselData[] = [
         image: optiverLogo,
         linkedinUrl:
             'https://www.linkedin.com/company/optiver/?originalSubdomain=au',
+    },
+    {
+        companyName: 'FDM Group',
+        image: fdmLogo,
+        linkedinUrl:
+            'https://www.linkedin.com/company/fdm-group/?originalSubdomain=au',
     },
 ];
 
